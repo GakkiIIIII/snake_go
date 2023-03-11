@@ -226,7 +226,7 @@ func (s *Scene) GenFood() {
 		}
 	}
 	foodSet := <-s.Food
-	if len(foodSet) < 5 {
+	if len(foodSet) < 8 {
 		foodSet[key] = struct{}{}
 	}
 	s.Food <- foodSet
